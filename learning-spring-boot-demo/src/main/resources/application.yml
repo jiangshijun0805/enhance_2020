@@ -1,0 +1,15 @@
+server:
+  port: 8081
+person:
+  name: xiaojiang
+  age: 31
+  birthday: 2010/11/21
+  boss: false
+  maps: {k1: v1,k2: v2}
+  list:
+    - 1
+    - 2
+    - 3
+  dog:
+    name: 小狗
+    age: 1
