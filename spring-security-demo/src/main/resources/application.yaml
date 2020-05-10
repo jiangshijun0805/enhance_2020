@@ -1,0 +1,28 @@
+spring:
+  #  datasource:
+  #    druid:
+  #      url: jdbc:mysql://localhost:3306/rsa?useUnicode=true&characterEncoding=utf-8&useSSL=false
+  #      username: root
+  #      password: 123456
+  #      initial-size: 1
+  #      min-idle: 1
+  #      max-active: 20
+  #      test-on-borrow: true
+  #      # MySQL 8.x: com.mysql.cj.jdbc.Driver
+  #      driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    #    jdbc-url: jdbc:mysql://localhost:3306/rsa?useUnicode=true&useSSL=false#&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/security_demo?useUnicode=true&useSSL=false#&characterEncoding=utf-8
+    username: root
+    password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver #com.mysql.jdbc.Driver
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
