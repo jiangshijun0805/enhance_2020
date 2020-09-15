@@ -1,4 +1,4 @@
-package com.xiaojiang.jdbc.model;
+package com.xiaojiang.jdbc.entity;
 
 public class User {
     private Integer id;

@@ -1,6 +1,6 @@
 package com.xiaojiang.jdbc.rowMapper;
 
-import com.xiaojiang.jdbc.model.User;
+import com.xiaojiang.jdbc.entity.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

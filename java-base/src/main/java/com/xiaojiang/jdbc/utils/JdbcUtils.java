@@ -139,6 +139,15 @@ public final class JdbcUtils {
         return count;
     }
 
+    /**
+     * 泛型通用对象查询方法
+     * @param connection
+     * @param query_sql
+     * @param params
+     * @param rowMapper
+     * @param <T>
+     * @return
+     */
     public static <T> List<T> executeQuery(Connection connection, String query_sql, Object[] params, RowMapper<T> rowMapper){
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
@@ -159,7 +168,10 @@ public final class JdbcUtils {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally{
+            JdbcUtils.closeResource(connection,preparedStatement,resultSet);
         }
+        return list;
     }
 
 

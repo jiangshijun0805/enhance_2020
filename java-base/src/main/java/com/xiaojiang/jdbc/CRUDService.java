@@ -1,6 +1,6 @@
 package com.xiaojiang.jdbc;
 
-import com.xiaojiang.jdbc.model.User;
+import com.xiaojiang.jdbc.entity.User;
 
 import java.sql.*;
 import java.util.ArrayList;
